@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #f4f4f4;
+      color: #1c2a3b;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header, .info-box, footer {
+      background: #fff;
+      color: #1c2a3b;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background: #181a1b;
+      color: #f4f4f4;
+    }
+
+    body.dark-mode header,
+    body.dark-mode .info-box,
+    body.dark-mode footer {
+      background: #23272b;
+      color: #f4f4f4;
+    }
+
+    body.dark-mode .section-title {
+      color: #ffe066;
+    }
+
+    body.dark-mode a {
+      color: #ffe066;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong> Web System and Technologies Performance Task</strong></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <section class="hero" id="home">
+    <img src="profile.jpg" alt="My Photo">
+    <div class="hero-text">
+      <p>Hello!</p>
+      <h1>I'm Alyssa</h1>
+      <p>STIer | IT Student | Lifelong Learner</p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="info-box">
+      <p><strong>Name:</strong> Alyssa Grace L. Martija</p>
+      <p><strong>Age:</strong> 21 years old</p>
+      <p><strong>Hobbies:</strong> Reading</p>
+      <p><strong>Location:</strong> Pasay-Edsa</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="info-box">
+      <p>HTML5</p>
+      <div class="skills-bar"><div class="skills-bar-fill" style="width: 95%;"></div></div>
+      <p>CSS3</p>
+      <div class="skills-bar"><div class="skills-bar-fill" style="width: 90%;"></div></div>
+      <p>JavaScript</p>
+      <div class="skills-bar"><div class="skills-bar-fill" style="width: 85%;"></div></div>
+      <p>React</p>
+      <div class="skills-bar"><div class="skills-bar-fill" style="width: 75%;"></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="info-box">
+      <p><strong>Portfolio Website:</strong> Showcasing my work and skills.</p>
+      <p><strong>ElevateIT:</strong> A smart tool to Asses Proficiency, Implement Standards, and Monitor Skill Advancement</p>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2 class="section-title">Hobbies</h2>
+    <div class="info-box">
+      <p><strong>Reading:</strong></p>
+      <img src="R.jpg" alt="Book Cover" width="100">
+      <img src="OIP.jpg" alt="Book Cover" width="100">
+      <img src="OIP1.jpg" alt="Book Cover" width="100">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Info</h2>
+    <div class="info-box">
+      <p>Email: alyssamartija09@gmail.com</p>
+      <p>Microsoft: martija.310457@pasay-edsa.sti.edu.ph</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 BSIT-603. All Rights Reserved.
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+document.getElementById('darkModeToggle').onclick = function() {
+  document.body.classList.toggle('dark-mode');
+};
+</script>
+</body>
+</html>
